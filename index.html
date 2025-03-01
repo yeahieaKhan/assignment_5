@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>assignment - 5</title>
+    <!-- daisyui link -->
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@5" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+</head>
+
+<body>
+    <main>
+        <nav>
+            <div class="navbar bg-base-100 shadow-sm container w-[80%] mx-auto">
+                <div class="flex-1 mt-5">
+                    <div class="flex items-center text-center">
+                        <img src="./assets/logo.png" alt="">
+                        <h2 class="text-3xl ml-2">Dev<span class="font-bold">Board</span> </h2>
+                    </div>
+                </div>
+                <div class="flex gap-2">
+                    <div class="flex gap-2 text-center items-center">
+                        <img src="./assets/checkbox.png" alt="">
+                        <span class="text-3xl font-bold" id="">23</span>
+                    </div>
+                </div>
+        </nav>
+        <section class="py-10 ml-40">
+            <div class="flex gap-5">
+                <div class="flex  gap-5">
+                    <div class="flex items-center w-[260px] gap-5 bg-slate-400 ">
+                        <div>
+                            <img src="./assets/checkbox.png" alt="">
+                        </div>
+                        <div>
+                            <h2 class="font-bold">Task Assigned</h2>
+                            <h2 id="task-assign">6</h2>
+                        </div>
+                    </div>
+                    <div class="bg-slate-600  rounded p-4 ">
+                        <div class="flex items-center">
+                            <img src="./assets/board.png" alt="">
+                            <h2 class="text-white text-3xl  ">Discover Something new Today</h2>
+                        </div>
+                    </div>
+                    <div class="w-[265px] bg-gray-300 flex items-center ">
+                        <div class="mx-5">
+                            <img src="./assets/calender.png" alt="">
+                        </div>
+                        <div>
+                            <h2>Fir day 28</h2>
+                            <h2>2025</h2>
+                        </div>
+                    </div>
+                </div>
+                <div>
+                    <div class="w-[365px]">
+                        <div class="flex gap-5">
+                            <img src="./assets/activity.png" alt="">
+                            <span>Activity Log</span>
+                        </div>
+                        <button class='btn btn-primary mt-6'>Clear History</button>
+                    </div>
+                </div>
+            </div>
+        
+        </section>
+
+        <section class="ml-40"> 
+            <div class="flex">
+                <div class="grid grid-cols-3 gap-5">
+                    <div class="card card-dash bg-base-100 w-[340px] h-[315px] gap-5 bg-gray-500">
+                        <div class="card-body">
+                          <h4 class="card-title">Shop Ease</h4>
+                          <h2 class="card-title">Fix Mobile Button issue</h2>
+                          <p>A card component has a figure, a body part, and inside body there are title and actions parts</p>
+                          <div class="flex justify-between">
+                            <div class="card-actions block">
+                               <h2>Deadline</h2>
+                               <h2>21 March 2025</h2>
+                              </div>
+                            <div class="card-actions ">
+                                <button class="btn btn-primary justify-end" id="mobile-button">Completed</button>
+                              </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="card card-dash bg-base-100 w-[340px] h-[315px] gap-5 bg-gray-500">
+                        <div class="card-body">
+                          <h4 class="card-title">Soft Pay</h4>
+                          <h2 class="card-title">Add Pay Access Modal</h2>
+                          <p>A card component has a figure, a body part, and inside body there are title and actions parts</p>
+                          <div class="flex justify-between">
+                            <div class="card-actions block">
+                               <h2>Deadline</h2>
+                               <h2>21 March 2025</h2>
+                              </div>
+                            <div class="card-actions ">
+                                <button class="btn btn-primary justify-end">Completed</button>
+                              </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="card card-dash bg-base-100 w-[340px] h-[315px] gap-5 bg-gray-500">
+                        <div class="card-body">
+                          <h4 class="card-title">Meta</h4>
+                          <h2 class="card-title">Add New reactions</h2>
+                          <p>A card component has a figure, a body part, and inside body there are title and actions parts</p>
+                          <div class="flex justify-between">
+                            <div class="card-actions block">
+                               <h2>Deadline</h2>
+                               <h2>21 March 2025</h2>
+                              </div>
+                            <div class="card-actions ">
+                                <button class="btn btn-primary justify-end">Completed</button>
+                              </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="card card-dash bg-base-100 w-[340px] h-[315px] gap-5 bg-gray-500">
+                        <div class="card-body">
+                          <h4 class="card-title">Programming hero</h4>
+                          <h2 class="card-title">Fix video loading issue</h2>
+                          <p>A card component has a figure, a body part, and inside body there are title and actions parts</p>
+                          <div class="flex justify-between">
+                            <div class="card-actions block">
+                               <h2>Deadline</h2>
+                               <h2>21 March 2025</h2>
+                              </div>
+                            <div class="card-actions ">
+                                <button class="btn btn-primary justify-end">Completed</button>
+                              </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="card card-dash bg-base-100 w-[340px] h-[315px] gap-5 bg-gray-500">
+                        <div class="card-body">
+                          <h4 class="card-title">Google LLC</h4>
+                          <h2 class="card-title">Integrate Ai Search</h2>
+                          <p>A card component has a figure, a body part, and inside body there are title and actions parts</p>
+                          <div class="flex justify-between">
+                            <div class="card-actions block">
+                               <h2>Deadline</h2>
+                               <h2>21 March 2025</h2>
+                              </div>
+                            <div class="card-actions ">
+                                <button class="btn btn-primary justify-end">Completed</button>
+                              </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="card card-dash bg-base-100 w-[340px] h-[315px] gap-5 bg-gray-500">
+                        <div class="card-body">
+                          <h4 class="card-title">Polygon Tech</h4>
+                          <h2 class="card-title">Review ami Probashi site</h2>
+                          <p>A card component has a figure, a body part, and inside body there are title and actions parts</p>
+                          <div class="flex justify-between">
+                            <div class="card-actions block">
+                               <h2>Deadline</h2>
+                               <h2>21 March 2025</h2>
+                              </div>
+                            <div class="card-actions ">
+                                <button class="btn btn-primary justify-end">Completed</button>
+                              </div>
+                          </div>
+                        </div>
+                      </div>
+                </div>
+                <div>
+                   
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+<script src="js/app.js"></script>
+</body>
+
+</html>
