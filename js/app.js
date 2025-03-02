@@ -337,3 +337,12 @@ function bgThemeColor(){
 document.getElementById("bg-theme").addEventListener("click", function(){
     document.body.style.background = bgThemeColor();
 })
+
+
+
+
+// clear history
+
+function clearHistory(deleteDistory){
+    document.getElementById(deleteDistory).innerHTML = " ";
+}
