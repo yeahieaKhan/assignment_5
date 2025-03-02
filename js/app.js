@@ -11,7 +11,7 @@ document.getElementById("mobile-button").addEventListener("click", function () {
     const taskNumerAdd = taskDoneNumer + 1;
     document.getElementById("task-done").innerHTML =taskNumerAdd;
     if(taskNumerAdd > 28){
-        alert("your have done all the task")
+        alert("congrates !!! You have completed all the current task")
     }
 
 
@@ -58,7 +58,7 @@ document.getElementById("add-pay").addEventListener("click", function(){
     const taskNumerAdd = taskDoneNumer + 1;
     document.getElementById("task-done").innerHTML =taskNumerAdd;
     if(taskNumerAdd > 28){
-        alert("your have done all the task")
+        alert("congrates !!! You have completed all the current task")
     }
     
 
@@ -115,7 +115,7 @@ document.getElementById("reaction-button").addEventListener("click", function(){
     const taskNumerAdd = taskDoneNumer + 1;
     document.getElementById("task-done").innerHTML =taskNumerAdd;
     if(taskNumerAdd > 28){
-        alert("your have done all the task")
+        alert("congrates !!! You have completed all the current task")
     }
     
 
@@ -170,7 +170,7 @@ document.getElementById("video-load-button").addEventListener("click", function(
     const taskNumerAdd = taskDoneNumer + 1;
     document.getElementById("task-done").innerHTML =taskNumerAdd;
     if(taskNumerAdd > 28){
-        alert("your have done all the task")
+        alert("congrates !!! You have completed all the current task")
     }
     
 
@@ -227,7 +227,7 @@ document.getElementById("ai-btn").addEventListener("click", function(){
     const taskNumerAdd = taskDoneNumer + 1;
     document.getElementById("task-done").innerHTML =taskNumerAdd;
     if(taskNumerAdd > 28){
-        alert("your have done all the task")
+        alert("congrates !!! You have completed all the current task")
     }
     
 
@@ -285,7 +285,7 @@ document.getElementById("review-btn").addEventListener("click", function(){
     const taskNumerAdd = taskDoneNumer + 1;
     document.getElementById("task-done").innerHTML =taskNumerAdd;
     if(taskNumerAdd > 28){
-        alert("your have done all the task")
+        alert("congrates !!! You have completed all the current task")
     }
     
 
@@ -346,3 +346,19 @@ document.getElementById("bg-theme").addEventListener("click", function(){
 function clearHistory(deleteDistory){
     document.getElementById(deleteDistory).innerHTML = " ";
 }
+
+
+
+
+// date 
+
+const date = new Date();
+const day = date.toLocaleString('en-US', { weekday: 'long' });
+const today = date.getDate(); 
+const month = date.toLocaleString('en-US', { month: 'long' }); 
+const year = date.getFullYear(); 
+
+document.getElementById("date-time").innerHTML = `
+  ${day}, ${month} ${today}, ${year}
+`;
+
