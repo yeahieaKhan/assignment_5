@@ -24,6 +24,9 @@
                     <div class="flex gap-2 text-center items-center">
                         <img src="./assets/checkbox.png" alt="">
                         <span class="text-3xl font-bold" id="task-done">23</span>
+                       <button id="bg-theme" class="cursor-pointer">
+                        <img src="./assets/theme-btn.png" id="bg-theme"  alt="">
+                       </button>
                     </div>
                 </div>
         </nav>
@@ -56,7 +59,7 @@
                     </div>
                 </div>
                 <div>
-                    <div class="w-[365px]">
+                    <div class="w-[300px] p-5 bg-white">
                         <div class="flex gap-5">
                             <img src="./assets/activity.png" alt="">
                             <span>Activity Log</span>
@@ -68,10 +71,10 @@
         
         </section>
 
-        <section class="ml-40"> 
-            <div class="flex">
+        <section class="ml-20"> 
+            <div class="flex gap-4">
                 <div class="grid grid-cols-3 gap-5">
-                    <div class="card card-dash bg-base-100 w-[340px] h-[315px] gap-5 bg-gray-500">
+                    <div class="card card-dash  w-[340px] h-[315px] gap-5 bg-white">
                         <div class="card-body">
                           <h4 class="card-title">Shop Ease</h4>
                           <h2 class="card-title" id="mobile-button-fix">Fix Mobile Button issue</h2>
@@ -90,7 +93,7 @@
                       <div class="card card-dash bg-base-100 w-[340px] h-[315px] gap-5 bg-gray-500">
                         <div class="card-body">
                           <h4 class="card-title">Soft Pay</h4>
-                          <h2 class="card-title">Add Pay Access Modal</h2>
+                          <h2 class="card-title" id="add-pay-titile">Add Pay Access Modal</h2>
                           <p>A card component has a figure, a body part, and inside body there are title and actions parts</p>
                           <div class="flex justify-between">
                             <div class="card-actions block">
@@ -98,7 +101,7 @@
                                <h2>21 March 2025</h2>
                               </div>
                             <div class="card-actions ">
-                                <button class="btn btn-primary justify-end">Completed</button>
+                                <button class="btn btn-primary justify-end" id="add-pay">Completed</button>
                               </div>
                           </div>
                         </div>
@@ -106,7 +109,7 @@
                       <div class="card card-dash bg-base-100 w-[340px] h-[315px] gap-5 bg-gray-500">
                         <div class="card-body">
                           <h4 class="card-title">Meta</h4>
-                          <h2 class="card-title">Add New reactions</h2>
+                          <h2 class="card-title" id="new-reaction">Add New reactions</h2>
                           <p>A card component has a figure, a body part, and inside body there are title and actions parts</p>
                           <div class="flex justify-between">
                             <div class="card-actions block">
@@ -114,7 +117,7 @@
                                <h2>21 March 2025</h2>
                               </div>
                             <div class="card-actions ">
-                                <button class="btn btn-primary justify-end">Completed</button>
+                                <button class="btn btn-primary justify-end" id="reaction-button">Completed</button>
                               </div>
                           </div>
                         </div>
@@ -122,7 +125,7 @@
                       <div class="card card-dash bg-base-100 w-[340px] h-[315px] gap-5 bg-gray-500">
                         <div class="card-body">
                           <h4 class="card-title">Programming hero</h4>
-                          <h2 class="card-title">Fix video loading issue</h2>
+                          <h2 class="card-title" id="video-load">Fix video loading issue</h2>
                           <p>A card component has a figure, a body part, and inside body there are title and actions parts</p>
                           <div class="flex justify-between">
                             <div class="card-actions block">
@@ -130,7 +133,7 @@
                                <h2>21 March 2025</h2>
                               </div>
                             <div class="card-actions ">
-                                <button class="btn btn-primary justify-end">Completed</button>
+                                <button class="btn btn-primary justify-end" id="video-load-button">Completed</button>
                               </div>
                           </div>
                         </div>
@@ -138,7 +141,7 @@
                       <div class="card card-dash bg-base-100 w-[340px] h-[315px] gap-5 bg-gray-500">
                         <div class="card-body">
                           <h4 class="card-title">Google LLC</h4>
-                          <h2 class="card-title">Integrate Ai Search</h2>
+                          <h2 class="card-title" id="ai-search">Integrate Ai Search</h2>
                           <p>A card component has a figure, a body part, and inside body there are title and actions parts</p>
                           <div class="flex justify-between">
                             <div class="card-actions block">
@@ -146,7 +149,7 @@
                                <h2>21 March 2025</h2>
                               </div>
                             <div class="card-actions ">
-                                <button class="btn btn-primary justify-end">Completed</button>
+                                <button class="btn btn-primary justify-end" id="ai-btn">Completed</button>
                               </div>
                           </div>
                         </div>
@@ -154,7 +157,7 @@
                       <div class="card card-dash bg-base-100 w-[340px] h-[315px] gap-5 bg-gray-500">
                         <div class="card-body">
                           <h4 class="card-title">Polygon Tech</h4>
-                          <h2 class="card-title">Review ami Probashi site</h2>
+                          <h2 class="card-title" id="review-title">Review ami Probashi site</h2>
                           <p>A card component has a figure, a body part, and inside body there are title and actions parts</p>
                           <div class="flex justify-between">
                             <div class="card-actions block">
@@ -162,13 +165,13 @@
                                <h2>21 March 2025</h2>
                               </div>
                             <div class="card-actions ">
-                                <button class="btn btn-primary justify-end">Completed</button>
+                                <button class="btn btn-primary justify-end" id="review-btn">Completed</button>
                               </div>
                           </div>
                         </div>
                       </div>
                 </div>
-                <div id="activity-log" class="mx-10 p-5">
+                <div id="activity-log" class="mx-5 mx-auto w-[430px] bg-slate-600 p-5">
                  
                 </div>
             </div>
