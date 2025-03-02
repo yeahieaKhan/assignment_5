@@ -1,12 +1,98 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>assignment - 5</title>
+    <!-- daisyui link -->
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@5" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
 </head>
+
 <body>
-    <h2>Hello</h2>
-    <a href="index.html">Home</a>
+    <main>
+        <nav>
+            <div class="navbar bg-base-100 shadow-sm container w-[80%] mx-auto">
+                <div class="flex-1 mt-5">
+                    <div class="flex items-center text-center">
+                        <img src="./assets/logo.png" alt="">
+                        <h2 class="text-3xl ml-2">Dev<span class="font-bold">Board</span> </h2>
+                    </div>
+                </div>
+                <div class=" ">
+                    <a href="index.html" class=" btn btn-primary no-underline">Back to Desk</a>
+                </div>
+        </nav>
+       
+        <section class="container w-[80%] mx-auto"> 
+            <h2 class="text-3xl text-center font-bold mt-10">Blogs</h2>
+            <div class="mt-20">
+                <h2 class="text-xl font-bold">
+                    Question-1: What are the different ways to select an element in the DOM?
+                </h2>
+                <p class="mt-10">
+                    DOM stands for <strong>Document Object Model</strong>. It is used to design web pages. 
+                    It represents the page so that programs can change the document structure, style, and content. 
+                    There are five ways to select elements in the DOM:
+                </p>
+                <ol class="mt-4 list-decimal list-inside">
+                    <li>Using <code>getElementById</code>.</li>
+                    <li>Using <code>getElementsByClassName</code>.</li>
+                    <li>Using <code>getElementsByTagName</code>.</li>
+                    <li>Using <code>querySelector</code>.</li>
+                    <li>Using <code>querySelectorAll</code>.</li>
+                </ol>
+            </div>
+
+            <div class="mt-20">
+                <h2 class="text-xl font-bold">
+                    Question-2: What is the difference between innerHTML, innerText, and textContent ?
+                </h2>
+                <p class="mt-10">
+                    textContents is all text contained within an element and all its child elements that are for formatting purposes only. innerText Returns all text contained within an element and all its child elements. innerHtml Returns all text contained within an element, including html tags.
+                </p>
+                
+            </div>
+            <div class="mt-20">
+                <h2 class="text-xl font-bold">
+                    Question-3: What is event delegation in the DOM?
+                </h2>
+                <p class="mt-10">
+                    Event Delegation is a useful technique in JavaScript, where basically an event listener is added to a parent element, so that it can handle the events of its child elements.
+                </p>
+                
+            </div>
+            <div class="mt-20">
+                <h2 class="text-xl font-bold">
+                    Question-4: What is event bubbling in the DOM?
+                </h2>
+                <p class="mt-10">
+                    Event bubbling is a mechanism where when an event is triggered on a child element, it propagates to its parent and higher elements. This allows parent elements to respond to child element events.
+                </p>
+                
+            </div>
+            <div class="mt-20">
+                <h2 class="text-xl font-bold">
+                    Question-5: How do you create, add, and remove elements using JavaScript?
+                </h2>
+                <p class="mt-10">
+                   <span>create element</span> <br>
+                   const elements = document.getElementById("demo") <br>
+                    const div = document.createElement(div); <br>
+                    elements.appendChild(div);
+                </p>
+                <p class="mt-10">
+                    <span>Delete element</span> <br>
+                    const elements = document.getElementById("demo") <br>
+                     elements.remove();
+                 </p>
+            </div>
+        </section>
+       
+    </main>
+
+<script src="js/app.js"></script>
 </body>
+
 </html>

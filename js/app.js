@@ -31,7 +31,7 @@ document.getElementById("mobile-button").addEventListener("click", function () {
     const activityLog =document.getElementById("activity-log");
     const div = document.createElement("div");
     div.innerHTML = `
-        <p id="mobile-button-fix">you have completed the task ${mobileButtonFIx} at ${hours}:${minutes}:${seconds} ${amPm}</p>
+        <p >you have completed the task ${mobileButtonFIx} at ${hours}:${minutes}:${seconds} ${amPm}</p>
     `;
 
     activityLog.appendChild(div);
@@ -92,7 +92,7 @@ document.getElementById("add-pay").addEventListener("click", function(){
     const div = document.createElement("div");
     console.log(div)
     div.innerHTML = `
-        <p id="mobile-button-fix">you have completed the task ${addPayTitle} at ${hours}:${minutes}:${seconds} ${amPm}</p>
+        <p >you have completed the task ${addPayTitle} at ${hours}:${minutes}:${seconds} ${amPm}</p>
     `;
 
     activityLog.appendChild(div);
@@ -149,7 +149,7 @@ document.getElementById("reaction-button").addEventListener("click", function(){
     const div = document.createElement("div");
     console.log(div)
     div.innerHTML = `
-        <p id="mobile-button-fix">you have completed the task ${newReactions} at ${hours}:${minutes}:${seconds} ${amPm}</p>
+        <p >you have completed the task ${newReactions} at ${hours}:${minutes}:${seconds} ${amPm}</p>
     `;
 
     activityLog.appendChild(div);
@@ -204,7 +204,7 @@ document.getElementById("video-load-button").addEventListener("click", function(
     const div = document.createElement("div");
     console.log(div)
     div.innerHTML = `
-        <p id="mobile-button-fix">you have completed the task ${videoLoad} at ${hours}:${minutes}:${seconds} ${amPm}</p>
+        <p>you have completed the task ${videoLoad} at ${hours}:${minutes}:${seconds} ${amPm}</p>
     `;
 
     activityLog.appendChild(div);
@@ -261,7 +261,7 @@ document.getElementById("ai-btn").addEventListener("click", function(){
     const div = document.createElement("div");
     console.log(div)
     div.innerHTML = `
-        <p id="mobile-button-fix">you have completed the task ${aiSearch} at ${hours}:${minutes}:${seconds} ${amPm}</p>
+        <p >you have completed the task ${aiSearch} at ${hours}:${minutes}:${seconds} ${amPm}</p>
     `;
 
     activityLog.appendChild(div);
@@ -310,16 +310,12 @@ document.getElementById("review-btn").addEventListener("click", function(){
     const amPm = hours >= 12 ? "PM" : "AM";
     console.log(amPm);
     
-    hours = hours % 12 || 12; // Convert 24-hour format to 12-hour format
-    console.log(hours);
+    hours = hours % 12 || 12; 
     
-    console.log(`${hours}:${minutes}:${seconds} ${amPm}`);
     const activityLog =document.getElementById("activity-log");
-    console.log(activityLog)
-    const div = document.createElement("div");
-    console.log(div)
+    const div = document.createElement("div")
     div.innerHTML = `
-        <p id="mobile-button-fix">you have completed the task ${reviewTitle} at ${hours}:${minutes}:${seconds} ${amPm}</p>
+        <p>you have completed the task ${reviewTitle} at ${hours}:${minutes}:${seconds} ${amPm}</p>
     `;
 
     activityLog.appendChild(div);
@@ -361,4 +357,13 @@ const year = date.getFullYear();
 document.getElementById("date-time").innerHTML = `
   ${day}, ${month} ${today}, ${year}
 `;
+
+
+
+
+
+
+
+
+
 
